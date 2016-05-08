@@ -1,0 +1,16 @@
+<% unless @games.nil? || @games.count == 0 %>
+  <% @games.each do |game| %>
+  <div style="padding:10px;">
+  <h3><a href="<%= game.link %>" target="_blank"><%= game.name %></a></h3>
+  Rating: <%= game.rating %><br>
+  <%= game.platform %><br>
+  Description: <%= game.deck %><br>
+  <% unless game.image == 'N/A' %>
+    <img src="<%='http://static.giantbomb.com/' + game.image %>"><br>
+  <% end %>  
+  </div>
+  <%end%>
+<%else%>
+  <p>Sorry that search was invalid, please try again</p>
+  <a href="/">Go Back</a>
+<%end%>
