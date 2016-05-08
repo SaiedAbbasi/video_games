@@ -32,16 +32,3 @@ class GameClient
   end
   
 end  
-
-      #.each_with_object(Hash.new(0)) do |result, hash|
-      # hash["name#{i}"] = result["name"]
-      # hash["deck#{i}"] = result["deck"]
-      # if result["image"]
-      #   hash["image#{i}"] = result["image"]["medium_url"]
-      # end  
-      
-      # if result["game_rating"]
-      #   hash["rating#{i}"] = result["game_rating"]["name"]
-      # end
-
-      # i += 1
